@@ -27,6 +27,10 @@ int main() {
         cout << "\n";
     }
 }
+
+
+
+
 #include<iostream>
 using namespace std;
 
