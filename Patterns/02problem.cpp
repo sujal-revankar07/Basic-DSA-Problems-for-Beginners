@@ -1,24 +1,36 @@
+// Write a program that takes an integer n as input and prints an n × n pattern of uppercase English letters starting from 'A' in each row.
+
+// Example:
+// Input:
+// n : 4
+
+// Output:
+// A B C D  
+// A B C D  
+// A B C D  
+// A B C D  
+
+
+
+
+
+
 #include<iostream>
 using namespace std;
-
 int main() {
     int n;
-    cout << "Enter the number of rows (n): ";
-    cin >> n;
-
-    // Validate input
-    while (n <= 0) {
-        cout << "Please enter a positive integer: ";
-        cin >> n;
-    }
-
-    // Print the pattern
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
-            cout << j;
+    cout << "n :";
+    cin  >> n;
+    
+    for (int i = 1; i <= n; i++)
+    {
+        char ch = 'A';
+        for (int j = 1 ; j <=n; j++)
+        {
+           cout << ch << " ";
+           ch = ch + 1;
         }
-        cout << endl;
+        
+        cout << "\n";
     }
-
-    return 0;
 }
